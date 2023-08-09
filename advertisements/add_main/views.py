@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    context = {'advertisements': ''}
+    return render(request, 'index.html', context)
 
 
 def top_sellers(request):
